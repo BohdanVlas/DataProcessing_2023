@@ -1,0 +1,156 @@
+.fon-1 {
+    position: absolute;
+    width: 1220px;
+    height: 620px;
+    left: 190px;
+    top: 105px;
+
+    form {
+        .edit {
+            .line {
+                position: absolute;
+                width: 800px;
+                height: 70px;
+
+                background: #E6E6E6;
+                border-radius: 13px;
+
+                label {
+                    position: absolute;
+                    top: 0px;
+                    align-self: center;
+                    pointer-events: none;
+
+                    span {
+                        display: inline-block;
+                        font-size: 18px;
+                        color: #777;
+                    }
+                }
+            }
+
+            .line input {
+                background-color: transparent;
+                border: 0;
+                border-bottom: 3px #000000 solid;
+                display: block;
+                width: 100%;
+                font-size: 24px;
+            }
+
+            .line-1 {
+                height: 70px;
+                left: 210px;
+            }
+
+            .line-2 {
+                left: 210px;
+                top: 127px;
+            }
+
+            .line-3 {
+                left: 209px;
+                top: 211px;
+            }
+
+            .line-4 {
+                left: 210px;
+                top: 295px;
+            }
+
+            .line-5 {
+                left: 210px;
+                top: 379px;
+            }
+
+            .line-6 {
+                left: 210px;
+                top: 463px;
+            }
+        }
+
+        button {
+            cursor: pointer;
+
+            position: absolute;
+            width: 200px;
+            height: 70px;
+            left: 616px;
+            top: 557px;
+
+            background: #AEE2FF;
+            border-radius: 13px;
+
+            p {
+                margin: 0%;
+
+                position: absolute;
+                width: 155px;
+                height: 29px;
+                left: 32px;
+                top: 21px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #000000;
+            }
+        }
+
+        button:hover,
+        button:focus,
+        button:active {
+            box-shadow: 0 0 50px#AEE2FF;
+            padding: 15px;
+        }
+
+        .btn-ret {
+            cursor: pointer;
+
+            position: absolute;
+            width: 200px;
+            height: 70px;
+            left: 404px;
+            top: 557px;
+
+            background: #AEE2FF;
+            border-radius: 50px;
+
+            p {
+                margin: 0%;
+
+                position: absolute;
+                width: 142px;
+                height: 27px;
+                left: 29px;
+                top: 22px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+
+                color: #000000;
+            }
+        }
+
+        .btn-ret:hover,
+        .btn-ret:focus,
+        .btn-ret:active {
+            box-shadow: 0 0 50px#AEE2FF;
+            padding: 15px;
+        }
+    }
+
+    .active {
+        z-index: 50;
+    }
+
+    .hidden {
+        z-index: -50;
+    }
+}
