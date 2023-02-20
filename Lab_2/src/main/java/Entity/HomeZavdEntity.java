@@ -17,7 +17,6 @@ public class HomeZavdEntity {
         this.zavd5 = zavd5;
         this.zavd6 = zavd6;
         this.zavd7 = zavd7;
-
     }
 
     public String getZavd1() {

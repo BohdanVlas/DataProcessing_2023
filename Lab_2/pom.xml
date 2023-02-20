@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.lab</groupId>
-    <artifactId>Lab_1</artifactId>
+    <artifactId>Lab_2</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
@@ -29,7 +29,7 @@
     </dependencies>
 
     <build>
-        <finalName>lab1</finalName>
+        <finalName>lab2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -1,0 +1,30 @@
+<div class="fon-1 hidden" id="form">
+    <form class="edit">
+        <div class="line line-1">
+            <input type="text" #p1 (keyup)="getName(p1.value)" name="name" required class="input">
+            <label><span></span></label>
+        </div>
+        <div class="line line-2">
+            <input type="text" #p2 (keyup)="getNamee(p2.value)" namee="name" required class="input">
+            <label><span></span></label>
+        </div>
+        <div class="line line-3">
+            <input type="text" #p3 (keyup)="getNameee(p3.value)" nameee="name" required class="input">
+            <label><span></span></label>
+        </div>
+        <div class="line line-4">
+            <input type="text" #imgsrc (keyup)="getImg1(imgsrc.value)" imgsrc="src" required class="input">
+            <label><span></span></label>
+        </div>
+        <div class="line line-5">
+            <input type="text" #imgalt (keyup)="getImg2(imgalt.value)" imgalt="alt" required class="input">
+            <label><span></span></label>
+        </div>
+        <div class="line line-6">
+            <input type="text" #imgtitle (keyup)="getImg3(imgtitle.value)" imgtitle="title" required class="input">
+            <label><span></span></label>
+        </div>
+    </form>
+    <button (click)="OnClick()" class="Send" >Редагувати</button>
+    <button class="btn-ret" onclick="button_ka226_main_edit_return()">Повернутися</button>
+</div>
