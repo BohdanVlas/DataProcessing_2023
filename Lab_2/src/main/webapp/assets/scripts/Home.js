@@ -1,5 +1,5 @@
-async function vstup_out(id, vstup1, vstup2, vstup3, vstup5, vstup41alt, vstup41src, vstup41title, vstup42alt, vstup42src, vstup42title, vstup43alt, vstup43src, vstup43title, vstup44alt, vstup44src, vstup44title, vstup45alt, vstup45src, vstup45title, vstup46alt, vstup46src, vstup46title) {
-    let containerv = document.getElementById(id)
+async function vstup_out(vstup1, vstup2, vstup3, vstup5, vstup41alt, vstup41src, vstup41title, vstup42alt, vstup42src, vstup42title, vstup43alt, vstup43src, vstup43title, vstup44alt, vstup44src, vstup44title, vstup45alt, vstup45src, vstup45title, vstup46alt, vstup46src, vstup46title) {
+    let containerv = document.getElementById("vstup")
     let vstup = document.createElement('div')
     vstup.className = 'vstup'
     let vstupHTML = `<p class="p vstup-1">${vstup1}</p>
@@ -17,8 +17,8 @@ async function vstup_out(id, vstup1, vstup2, vstup3, vstup5, vstup41alt, vstup41
     vstup.innerHTML = vstupHTML;
     containerv.append(vstup);
 }
-async function helicopt_out(id, helicopt_, helicopt_1, helicopt_11, helicopt_2, helicopt_21, helicopt_22, helicopt_23, helicopt_3, helicopt_31, helicopt_32, helicopt_33) {
-    let containerh = document.getElementById(id)
+async function helicopt_out(helicopt_, helicopt_1, helicopt_11, helicopt_2, helicopt_21, helicopt_22, helicopt_23, helicopt_3, helicopt_31, helicopt_32, helicopt_33) {
+    let containerh = document.getElementById("helicopt")
     let helicopt = document.createElement('div')
     helicopt.className = 'helicopt'
     let helicoptHTML = `<p class="p helicopt_">${helicopt_}</p>
@@ -35,7 +35,7 @@ async function helicopt_out(id, helicopt_, helicopt_1, helicopt_11, helicopt_2, 
     helicopt.innerHTML = helicoptHTML;
     containerh.append(helicopt);
 }
-async function zavd_out(id, zavd1, zavd2, zavd3, zavd4, zavd5, zavd6, zavd7) {
+async function zavd_out(zavd1, zavd2, zavd3, zavd4, zavd5, zavd6, zavd7) {
     let containerz = document.getElementById("zavd")
     let zavd = document.createElement('div')
     zavd.className = 'zavd'
@@ -51,14 +51,13 @@ async function zavd_out(id, zavd1, zavd2, zavd3, zavd4, zavd5, zavd6, zavd7) {
 }
 
 async function Get_Vstup() {
-    fetch("http://localhost:3000/home-vstup").then(
+    fetch("http://localhost:8300/HomeVstupServlet").then(
         (response) => {
             return response.text()
         }
     ).then((text) => {
         let vstup = JSON.parse(text)
-
-        id = `${vstup.id}`
+        
         vstup1 = `${vstup.vstup_1}`
         vstup2 = `${vstup.vstup_2}`
         vstup3 = `${vstup.vstup_3}`
@@ -82,18 +81,17 @@ async function Get_Vstup() {
         vstup46alt = `${vstup.vstup_4_6_alt}`
         vstup46title = `${vstup.vstup_4_61_title}`
 
-        vstup_out(id, vstup1, vstup2, vstup3, vstup5, vstup41alt, vstup41src, vstup41title, vstup42alt, vstup42src, vstup42title, vstup43alt, vstup43src, vstup43title, vstup44alt, vstup44src, vstup44title, vstup45alt, vstup45src, vstup45title, vstup46alt, vstup46src, vstup46title)
+        vstup_out(vstup1, vstup2, vstup3, vstup5, vstup41alt, vstup41src, vstup41title, vstup42alt, vstup42src, vstup42title, vstup43alt, vstup43src, vstup43title, vstup44alt, vstup44src, vstup44title, vstup45alt, vstup45src, vstup45title, vstup46alt, vstup46src, vstup46title)
     })
 }
-async function Get_Helicoptp() {
-    fetch("http://localhost:3000/home-helicopt").then(
+async function Get_Helicopt() {
+    fetch("http://localhost:8300/HomeHelicoptServlet").then(
         (response) => {
             return response.text()
         }
     ).then((text) => {
         let helicopt = JSON.parse(text)
 
-        id = `${helicopt.id}`
         helicopt_ = `${helicopt.helicopt_}`
         helicopt_1 = `${helicopt.helicopt_1}`
         helicopt_11 = `${helicopt.helicopt_11}`
@@ -106,7 +104,7 @@ async function Get_Helicoptp() {
         helicopt_32 = `${helicopt.helicopt_32}`
         helicopt_33 = `${helicopt.helicopt_33}`
 
-        helicopt_out(id, helicopt_, helicopt_1, helicopt_11, helicopt_2, helicopt_21, helicopt_22, helicopt_23, helicopt_3, helicopt_31, helicopt_32, helicopt_33)
+        helicopt_out(helicopt_, helicopt_1, helicopt_11, helicopt_2, helicopt_21, helicopt_22, helicopt_23, helicopt_3, helicopt_31, helicopt_32, helicopt_33)
     })
 }
 async function Get_Zavd() {
@@ -116,8 +114,6 @@ async function Get_Zavd() {
         }
     ).then((text) => {
         let zavd = JSON.parse(text)
-
-        id = `home-zavd`
         zavd1 = `${zavd.zavd1}`
         zavd2 = `${zavd.zavd2}`
         zavd3 = `${zavd.zavd3}`
@@ -126,10 +122,10 @@ async function Get_Zavd() {
         zavd6 = `${zavd.zavd6}`
         zavd7 = `${zavd.zavd7}`
 
-        zavd_out(id, zavd1, zavd2, zavd3, zavd4, zavd5, zavd6, zavd7)
+        zavd_out(zavd1, zavd2, zavd3, zavd4, zavd5, zavd6, zavd7)
     })
 }
 
 Get_Vstup();
-Get_Helicoptp();
+Get_Helicopt();
 Get_Zavd()

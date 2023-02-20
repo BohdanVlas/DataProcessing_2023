@@ -1,4 +1,4 @@
-function button_history() {
+function button_mi24_history() {
     document.getElementById("mi-24-history").classList.remove("hidden");
     if (document.getElementById("mi-24-history").classList.contains('active') != 1){
         document.getElementById("mi-24-history").classList.toggle("active");
@@ -9,7 +9,7 @@ function button_history() {
         document.getElementById("mi-24-main").classList.remove("active");
     }
 }
-function button_lth() {
+function button_mi24_lth() {
     document.getElementById("mi-24-lth").classList.remove("hidden");
     if (document.getElementById("mi-24-lth").classList.contains('active') != 1){
         document.getElementById("mi-24-lth").classList.toggle("active");
@@ -20,7 +20,7 @@ function button_lth() {
         document.getElementById("mi-24-main").classList.remove("active");
     }
 }
-function button_ozbr() {
+function button_mi24_ozbr() {
     document.getElementById("mi-24-ozbr").classList.remove("hidden");
     if (document.getElementById("mi-24-ozbr").classList.contains('active') != 1){
         document.getElementById("mi-24-ozbr").classList.toggle("active");
@@ -32,7 +32,7 @@ function button_ozbr() {
     }
 }
 
-function button_return_history() {
+function button_return_mi24_history() {
     document.getElementById("mi-24-main").classList.remove("hidden");
     if (document.getElementById("mi-24-main").classList.contains('active') != 1){
         document.getElementById("mi-24-main").classList.toggle("active");
@@ -136,7 +136,7 @@ function button_return_mi24py1_modern() {
     }
 }
 
-function button_lth_return() {
+function button_mi24_lth_return() {
     document.getElementById("mi-24-main").classList.remove("hidden");
     if (document.getElementById("mi-24-main").classList.contains('active') != 1){
         document.getElementById("mi-24-main").classList.toggle("active");
@@ -148,7 +148,7 @@ function button_lth_return() {
     }
 }
 
-function button_ozbr_return() {
+function button_mi24_ozbr_return() {
     document.getElementById("mi-24-main").classList.remove("hidden");
     if (document.getElementById("mi-24-main").classList.contains('active') != 1){
         document.getElementById("mi-24-main").classList.toggle("active");
@@ -159,7 +159,7 @@ function button_ozbr_return() {
         document.getElementById("mi-24-ozbr").classList.remove("active");
     }
 }
-function button_kursove() {
+function button_mi24_kursove() {
     document.getElementById("mi-24-kursove").classList.remove("hidden");
     if (document.getElementById("mi-24-kursove").classList.contains('active') != 1){
         document.getElementById("mi-24-kursove").classList.toggle("active");
@@ -170,7 +170,7 @@ function button_kursove() {
         document.getElementById("mi-24-ozbr").classList.remove("active");
     }
 }
-function button_pidvisne() {
+function button_mi24_pidvisne() {
     document.getElementById("mi-24-pidvisne").classList.remove("hidden");
     if (document.getElementById("mi-24-pidvisne").classList.contains('active') != 1){
         document.getElementById("mi-24-pidvisne").classList.toggle("active");
@@ -182,7 +182,7 @@ function button_pidvisne() {
     }
 }
 
-function button_kursove_return() {
+function button_mi24_kursove_return() {
     document.getElementById("mi-24-ozbr").classList.remove("hidden");
     if (document.getElementById("mi-24-ozbr").classList.contains('active') != 1){
         document.getElementById("mi-24-ozbr").classList.toggle("active");
@@ -194,7 +194,7 @@ function button_kursove_return() {
     }
 }
 
-function button_pidvisne_return() {
+function button_mi24_pidvisne_return() {
     document.getElementById("mi-24-ozbr").classList.remove("hidden");
     if (document.getElementById("mi-24-ozbr").classList.contains('active') != 1){
         document.getElementById("mi-24-ozbr").classList.toggle("active");

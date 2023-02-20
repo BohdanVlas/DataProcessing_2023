@@ -7,13 +7,13 @@ async function main_out(id, p1, p2, p3, imgsrc, imgalt, imgtitle) {
                         <p class="p-3">${p3}</p>
                         <img class="img" src="./assets/images/${imgsrc}" alt="${imgalt}" title="${imgtitle}">
                         <div class="buttons-1">
-                            <button onclick="button_history()" class="button-1 button1">
+                            <button onclick="button_mi24_history()" class="button-1 button1">
                                 <p class="p">Опис і історія</p>
                             </button>
-                            <button onclick="button_lth()" class="button-1 button2">
+                            <button onclick="button_mi24_lth()" class="button-1 button2">
                                 <p class="p">ЛТХ</p>
                             </button>
-                               <button onclick="button_ozbr()" class="button-1 button3">
+                               <button onclick="button_mi24_ozbr()" class="button-1 button3">
                                <p class="p">Озброєння</p>
                             </button>
                         </div>`;
@@ -50,7 +50,7 @@ async function lth_out(id, p1, imgsrc, imgalt, imgtitle, gabarp2, gabarp3, gabar
                             <p class="p p-13">Кількість перевозимих людей – ${lthp13} десантників</p>
                             <p class="p p-14">Кількість перевозимих людей – ${lthp14} поранених</p>
                         </div>
-                        <button onclick="button_lth_return()" class="button-return">
+                        <button onclick="button_mi24_lth_return()" class="button-return">
                             <p class="button-return-p">Повернутися</p>
                         </button>`;
     lth.innerHTML = lthHTML;
@@ -66,13 +66,13 @@ async function ozbr_out(id, p1, imgsrc, imgalt, imgtitle, pimg, p2, p3) {
                     <p class="p p-2">${p2}</p>
                     <p class="p p-3">${p3}</p>
                     <div class="buttons-1">
-                        <button onclick="button_ozbr_return()" class="button-1 button1">
+                        <button onclick="button_mi24_ozbr_return()" class="button-1 button1">
                             <p class="button-1-p">Повернутися</p>
                         </button>
-                        <button onclick="button_kursove()" class="button-1 button2">
+                        <button onclick="button_mi24_kursove()" class="button-1 button2">
                             <p class="button-2-p">Курсове</p>
                         </button>
-                        <button onclick="button_pidvisne()" class="button-1 button3">
+                        <button onclick="button_mi24_pidvisne()" class="button-1 button3">
                             <p class="button-3-p">Підвісне</p>
                         </button>
                     </div>`;
@@ -88,7 +88,7 @@ async function kursove_out(id, p1, imgsrc, imgalt, imgtitle, pimg, p2, p3) {
                         <p class="p p-img">${pimg}</p>
                         <p class="p p-2">${p2}</p>
                         <p class="p p-3">${p3}</p>
-                        <button onclick="button_kursove_return()" class="button-return">
+                        <button onclick="button_mi24_kursove_return()" class="button-return">
                             <p class="button-return-p">Повернутися</p>
                         </button>`;
     kursove.innerHTML = kursoveHTML;
@@ -114,7 +114,7 @@ async function pidvisne_out(id, p1, p2, p3, p4, img1src, img1alt, img1title, pim
                         <img src="./assets/images/${imggr31src}" alt="${imggr31alt}" title="${imggr31title}" class="img-gr3-1">
                         <img src="./assets/images/${imggr32src}" alt="${imggr32alt}" title="${imggr32title}" class="img-gr3-2">
                         <p class="p-img-gr3">${pimggr3}</p>
-                        <button onclick="button_pidvisne_return()" class="button-return">
+                        <button onclick="button_mi24_pidvisne_return()" class="button-return">
                             <p class="button-return-p">Повернутися</p>
                         </button>`;
     pidvisne.innerHTML = pidvisneHTML;
@@ -129,7 +129,7 @@ async function history_out(id, p1, p2, p3, p4) {
                         <p class="p p-3">${p3}</p>
                         <p class="p p-4">${p4}</p>
                         <div class="buttons-1">
-                            <button onclick="button_return_history()" class="button-1 button1">
+                            <button onclick="button_return_mi24_history()" class="button-1 button1">
                                 <p class="button-1-p">Повернутися</p>
                             </button>
                             <button onclick="button_mi24a()" class="button-1 button2">
