@@ -1,0 +1,7 @@
+Entity\HistoryEntity.class
+Servlets\CRUDConfig.class
+jdbc\SqlCRUD.class
+jdbc\Connect.class
+Servlets\HistoryCRUDInterface.class
+jdbc\Main.class
+Servlets\HistoryServlet.class
