@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="../assets/images/About/Logos/Logo3d.png" alt="Logo3D" class="logo-3d"></a>
+        <div class="menu">
+            <button class="menu-button menu-button-1">
+                <a href="./about.component.html">
+                    <p>Про компанію</p>
+                </a>
+            </button>
+            <button class="menu-button menu-button-2">
+                <a href="#">
+                    <p>Цивільні Автомобілі</p>
+                </a>
+            </button>
+            <button class="menu-button menu-button-3">
+                <a href="#">
+                    <p>Військові Автомобілі</p>
+                </a>
+            </button>
+            <button class="menu-button menu-button-4">
+                <a href="#">
+                    <p>Новини</p>
+                </a>
+            </button>
+        </div>
+    </header>
+    <section class="history" id="history">
+        <p class="h1">Наша історія</p>
+        <ng-template let-hist pTemplate="listItem" class="hist">
+            <div class="col-12">
+                <div class="hist-list-item">
+                    <img src="{{ hist.photo }}" alt="" />
+                    <div class="hist-list-detail">
+                        <div class="hist-year">{{ hist.year }}</div>
+                        <div class="hist-text">{{ hist.text }}</div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </section>
+    <footer>
+        <a href="http://www.autokraz.com.ua/index.php/uk/"><img src="../assets/images/About/Logos/Logo3d.png"
+                alt="Logo3D" class="imgfooter"></a>
+        <p class="pfooter">&copy; 2023</p>
+    </footer>
+</body>
+
+</html>
