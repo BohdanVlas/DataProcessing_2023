@@ -1,0 +1,215 @@
+<div class="flex justify-center">
+  <div class="flex flex-wrap justify-center">
+    <form #HistForm="ngForm" class="pt-10">
+      <div class="flex">
+        <div class="w-8"></div>
+        <h2>Додати подію</h2>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div>
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"
+                ><i class="pi pi-prime"></i
+              ></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="num"
+                [(ngModel)]="new_hist.num"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <div class="input">
+              <span class="p-inputgroup-addon">$</span>
+              <input
+                type="text"
+                pInputText
+                placeholder="id"
+                [(ngModel)]="new_hist.id"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"><i class="pi pi-tag"></i></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="clas"
+                [(ngModel)]="new_hist.clas"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-align-left"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="year"
+                  [(ngModel)]="new_hist.year"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-star-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="imgsrc"
+                  [(ngModel)]="new_hist.imgsrc"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-chart-bar"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="text"
+                  [(ngModel)]="new_hist.text"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center pt-5">
+          <p-button
+            icon="pi pi-plus-circle"
+            type=""
+            label="Додати подію"
+            styleClass="p-button-sm"
+            class="text-zinc-50"
+            (onClick)="showViaServiceAdd()"
+          ></p-button>
+        </div>
+      </div>
+    </form>
+    <form #guitarForm="ngForm" class="pt-10" *ngIf="selectedHist">
+      <div class="flex">
+        <div class="w-8"></div>
+        <h2>Оновити подію</h2>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div>
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"
+                ><i class="pi pi-prime"></i
+              ></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="num"
+                [(ngModel)]="selhist.num"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+
+            <div class="input">
+              <span class="p-inputgroup-addon">$</span>
+              <input
+                type="text"
+                pInputText
+                placeholder="id"
+                [(ngModel)]="selhist.id"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="input">
+              <span class="p-inputgroup-addon"><i class="pi pi-tag"></i></span>
+              <input
+                type="text"
+                pInputText
+                placeholder="clas"
+                [(ngModel)]="selhist.clas"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </div>
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-align-left"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="year"
+                  [(ngModel)]="selhist.year"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-star-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="imgsrc"
+                  [(ngModel)]="selhist.imgsrc"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+
+            <div class="input">
+              <div>
+                <span class="p-inputgroup-addon"
+                  ><i class="pi pi-chart-bar"></i
+                ></span>
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="text"
+                  [(ngModel)]="selhist.text"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center pt-5">
+          <p-button
+            icon="pi pi-arrow-circle-up
+            "
+            type=""
+            label="Оновити подію"
+            styleClass="p-button-sm"
+            class="text-zinc-50"
+            (onClick)="showViaServiceUpdate()"
+          ></p-button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
