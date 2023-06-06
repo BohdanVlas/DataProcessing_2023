@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            padding-left: 10%;
+	        padding-right: 10%;
+	        margin: 0;
+
+            .type {
+	            padding: 10px;
+	            margin-bottom: 10px;
+	            width: 300px;
+	            border: 2px solid #4ade80;
+	            border-radius: 5px;
+            }
+
+	        .row {
+	            padding-top: 50px;
+            }
+
+            .button {
+	            width: 150px;
+	            height: 45px;
+	            border: none;
+	            border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="form">
+    <form class="add">
+        <div class="row">
+            <div class="line">
+                <input type="text" field="*{name}" id="id" placeholder="id" name="id" class="type">
+            </div>
+            <div class="line">
+                <input type="text" field="*{name}" id="clas" placeholder="clas" name="clas" class="type">
+            </div>
+            <div class="line">
+                <input type="text" field="*{name}" id="year" placeholder="year" name="year" class="type">
+            </div>
+            <div class="line">
+                <input type="text" field="*{name}" id="imgsrc" placeholder="imgsrc" name="imgsrc" class="type">
+            </div>
+            <div class="line">
+                <input type="text" field="*{name}" id="text" placeholder="text" name="text" class="type">
+            </div>
+        </div>
+        <div class="row">
+            <div >
+                <input type="submit" value="Add" class="button">
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+</html>
