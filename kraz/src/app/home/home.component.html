@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <section class="head">
+            <img src="../assets/images/Head.png" alt="" class="img">
+        </section>
+        <section class="header">
+            <a [routerLink]="'/home'" fragment="section-1"><img src="../assets/images/About/Logos/Logo3d.png" alt="Logo3D" class="logo-3d"></a>
+            <div class="menu">
+                <button class="menu-button menu-button-1">
+                    <a [routerLink]="'/about'" fragment="about">
+                        <p>Про компанію</p>
+                    </a>
+                </button>
+                <button class="menu-button menu-button-2">
+                    <a href="#">
+                        <p>Цивільні Автомобілі</p>
+                    </a>
+                </button>
+                <button class="menu-button menu-button-3">
+                    <a href="#">
+                        <p>Військові Автомобілі</p>
+                    </a>
+                </button>
+                <button class="menu-button menu-button-4">
+                    <a href="#">
+                        <p>Новини</p>
+                    </a>
+                </button>
+            </div>
+        </section>
+    </header>
+    <section class="section-1" id="section-1">
+        <p class="p1">Компанія «АвтоКрАЗ»</p>
+        <p class="p2">Історія «КрАЗу» — це довгий і важкий шлях до автозаводу світового рівня. Підприємство за весь період свого існування, починаючи з 1945<BR>
+            року, тричі змінювало характер виробництва. Але, незважаючи на часту реорганізацію, «КрАЗ» — одне з небагатьох підприємств в країні,<BR>
+           якому вдалося увійти до десятки лідерів автомобілебудування.</p>
+        <a href="#"><p class="p3">Детальніше про компанію...</p></a>
+        <div class="civ">
+            <img src="../assets/images/Civ/Civ.jpg" alt="" class="img">
+            <a href="#"><p class="p">Цивільні<BR>Автомобілі</p></a>
+        </div>
+        <div class="mv">
+            <img src="../assets/images/MV/Mil.jpg" alt="" class="img">
+            <a href="#"><p class="p">Військові<BR>Автомобілі</p></a>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="present">
+            <div class="civpr active" id="civpr">
+                <img src="../assets/images/Civ/CivP.jpg" alt="" class="img">
+                <a href="https://www.youtube.com/watch?v=Ufz-cdfEm5Q">
+                    <p class="p1">Презентація автомобілів<BR>
+                        КрАЗ для цивільного сектору</p>
+                    <p class="p2">Відеопрезентація</p>
+                </a>
+            </div>
+            <div class="mvpr hidden" id="mvpr">
+                <img src="../assets/images/MV/MilP.jpg" alt="" class="img">
+                <a href="https://www.youtube.com/watch?v=pKvNUxBocaY">
+                    <p class="p1">Презентація автомобілів<BR>
+                        КрАЗ для військового сектору</p>
+                    <p class="p2">Відеопрезентація</p>
+                </a>
+            </div>
+        </div>
+        <div class="catalogues">
+            <div class="cat-1">
+                <img src="../assets/Catalogues/Catalogues/Catalogue.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/Catalogue.pdf"><p class="p1">Каталог автомобілів<BR>КрАЗ</p></a>
+                <p class="p2">PDF, 15 MB</p>
+            </div>
+            <div class="cat-2">
+                <img src="../assets/Catalogues/Catalogues/Chassis.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/Chassis.pdf"><p class="p1">Каталог шасі КрАЗ</p></a>
+                <p class="p2">PDF, 6,4 MB</p>
+            </div>
+            <div class="cat-3">
+                <img src="../assets/Catalogues/Catalogues/Dump.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/Dump.pdf"><p class="p1">Самоскиди КрАЗ</p></a>
+                <p class="p2">PDF, 4,1 MB</p>
+            </div>
+            <div class="cat-4">
+                <img src="../assets/Catalogues/Catalogues/Municipal.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/Municipal.pdf"><p class="p1">Комунальна та<BR>дорожня техніка</p></a>
+                <p class="p2">PDF, 7,5 MB</p>
+            </div>
+            <div class="cat-5">
+                <img src="../assets/Catalogues/Catalogues/MV.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/MV.pdf"><p class="p1">Військові автомобілі<BR>КрАЗ</p></a>
+                <p class="p2">PDF, 14 MB</p>
+            </div>
+            <div class="cat-6">
+                <img src="../assets/Catalogues/Catalogues/Trailers.png" alt="" class="img">
+                <a href="../assets/Catalogues/Catalogues/Trailers.pdf"><p class="p1">Каталог причепів<BR>КрАЗ</p></a>
+                <p class="p2">PDF, 2,4 MB</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="newshead">
+                <p class="p">Останні новини</p>
+            </div>
+            <div class="news1">
+                <img src="../assets/images/News/16Feb.jpg" alt="" class="img">
+                <p class="data">16 Лютого 2023</p>
+                <p class="p1">Оновлено Антикорупційну програму ПрАТ<BR>
+                    "АвтоКрАЗ"</p>
+            </div>
+            <div class="news2">
+                <img src="../assets/images/News/31Dec.jpg" alt="" class="img">
+                <p class="data">31 Грудня 2022</p>
+                <p class="p1">Вітаємо зі святами!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="http://www.autokraz.com.ua/index.php/uk/"><img src="../assets/images/About/Logos/Logo3d.png" alt="Logo3D" class="imgfooter"></a>
+        <p class="pfooter">&copy; 2023</p>
+    </footer>
+</body>
+
+</html>
